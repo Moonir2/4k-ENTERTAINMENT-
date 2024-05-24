@@ -1,0 +1,19 @@
+const slider = document.querySelector('.slider');
+
+const sliderItems = slider.querySelectorAll('.slider-item');
+
+sliderItems.forEach((item) => {
+
+  const video = item.querySelector('video');
+
+  const icon = item.querySelector('img');
+
+  // Add event listener to the icon to play the video
+
+  icon.addEventListener('click', () => {
+
+    video.play();
+
+  });
+
+});
